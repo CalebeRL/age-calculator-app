@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <main>
+      
+        <form class="app-form">
+          <div id="inputs-wrapper">
+            <div class="input-wrapper">
+              <label>DAY</label>
+              <input class="input-date" type="number" placeholder="DD" max="31" data-state="valid"> 
+              <div class="label-invalid">Must be a valid day</div>
+              <div class="label-error label-empty hidden">This field is required</div>
+              <div class="label-error label-invalid-date hidden">Must be a valid date</div>
+            </div>
+
+            <div class="input-wrapper">
+              <label>MONTH</label>
+              <input class="input-date" type="number" placeholder="MM" max="12">
+              <div class="label-invalid">Must be a valid month</div>
+              <div class="label-error label-empty hidden">This field is required</div>
+            </div>
+
+            <div class="input-wrapper">
+              <label>YEAR</label>
+              <input class="input-date" type="number" placeholder="YYYY">
+              <div class="label-invalid">Must be in the past</div>
+              <div class="label-error label-empty hidden">This field is required</div>
+            </div>
+          </div>
+                      
+          <div class="divider">
+            <div class="divider-line"></div>
+            <button class="button" type="submit">
+              <img class="icon-arrow" src="./assets/images/icon-arrow.svg">
+            </button>
+          </div>
+        </form>
+      
+        <div id="calculator-results">
+          <div class="result"><span>--</span>years</div>
+          <div class="result"><span>--</span>months</div>
+          <div class="result"><span>--</span>days</div>
+        </div>
+
+    </main>
+  </div>
+  
+  
+  
+ 
+</body>
+</html>
